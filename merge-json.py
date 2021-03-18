@@ -1,10 +1,10 @@
 from pprint import pprint
 from jsonmerge import merge
 
-f1 = open("adept-config/target/bom.json", "r")
+f1 = open("project/target/bom.json", "r")
 
 
-f2 = open("adept-config-lsp/target/bom.json", "r")
+f2 = open("project/target/bom.json", "r")
 
 result = merge(f1.read(), f2.read())
 
